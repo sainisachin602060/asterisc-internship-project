@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+  <body >
+    {% block body %}
+    
+
+    
+    <div class="py-16 bg-white">  
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+          
+            <div class="md:5/12 lg:w-5/12"> 
+           <img src="{% static 'IMG_20221126_201712.jpg' %}" class="!important " alt="image data" loading="lazy" width="400" height="500">
+           
+          
+          </div>
+
+          <div class="md:7/12 lg:w-6/12">
+            <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">About Myself.</h2>
+            <p class="mt-6 text-gray-600">Hi,My Name is Sachin Saini. I am from Roorkee Uttrakhand.I am student of Master of Computer Application at Qunatum University.Our mission is simple: to provide our readers with high-quality articles that inform, entertain, and inspire. Whether you're looking.Thank you for taking the time to get to know us. We hope you'll continue to explore our website and join us on our journey to make the world a better, more informed, and more connected place.
+           for the latest news, insightful analysis, or just a good read, we've got you covered.</p>
+           <p class="mt-8 font-bold text-black">SACHIN SAINI</p>
+           <button class="mt-8 p-4 w-44 rounded font-normal  bg-gradient-to-b from-green-600 to-green-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-800 transition duration-200 ">
+            <a href="/sendQuery/">Suggest A Article </a>
+           </button>  
+        </div>
+         
+        </div>
+      
+    </div>
+    
+  </div>
+  {% endblock body %}
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    
+    {% block body %}
+    <section class="bg-gray-700">
+  
+
+  <div
+       class="max-w-lg bg-gray-700 px-4 pt-24 py-8 mx-auto text-left md:max-w-none md:text-center"
+     >
+       <h1
+         class="text-3xl font-extrabold leading-10 tracking-tight text-left text-white text-center sm:leading-none md:text-5xl text-2xl lg:text-5xl"
+       >
+         <span class="inline md:block">JOIN US</span>
+         <span
+           class=" mt-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-emerald-400 to-green-500 md:inline-block"
+         > READ OUR<span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-cyon-400 to-purple-300"> ARTICLE</span> </span>
+       </h1>
+       <div
+         class="mx-auto rounded-lg font-black mt-5 text-zinc-400 md:mt-12 md:max-w-lg text-center lg:text-lg"
+       >
+         <button class="bg-tkb border text-sm text-white py-3 px-7 rounded" onClick={signInNow}>
+            <a href="/sendQuery/">Send A Article Request</a>
+         </button>
+       </div>
+     </div>
+</section>
+
+    {% endblock body %}
+
+
+    
+</body>
+</html>
